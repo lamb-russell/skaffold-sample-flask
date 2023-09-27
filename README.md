@@ -3,6 +3,9 @@
 
 This project provides a simple Flask "Hello World" application that can be deployed locally using Minikube and Skaffold.
 
+The idea is to illustrate how Skaffold can keep local code in sync with a deployed container without needed to rebuild the container.  
+
+
 ## Prerequisites
 
 - [Docker](https://www.docker.com/get-started)
