@@ -1,0 +1,17 @@
+apiVersion: skaffold/v2beta15
+kind: Config
+metadata:
+  name: hello-world-flask
+build:
+  artifacts:
+  - image: hello-world-flask
+    context: .
+    docker:
+      dockerfile: Dockerfile
+  local:
+    push: false
+deploy:
+  kubectl:
+    manifests:
+    - hello-world-deployment.yaml
+    - hello-world-service.yaml
